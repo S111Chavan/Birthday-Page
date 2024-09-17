@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+           
+            background-image: url('https://thefreegfx.com/wp-content/uploads/2022/01/colorful-baloons-flying-up-looped-animation-background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 50px;
+            color: #fff;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        .header {
+            font-size: 2em;
+            color: #ffdf6f;
+            margin-bottom: 20px;
+        }
+        .message {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .images img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+        .footer {
+            font-size: 0.9em;
+            color: #ccc;
+            margin-top: 20px;
+        }
+
+
+
+        .imageBox {
+      position: relative;
+      float: center;
+      text-align: center;
+    }
+
+    .imageBox .hoverImg {
+      position: relative;
+     
+      display: none;
+     
+    }
+
+    .imageBox:hover .hoverImg {
+      display: block;
+      
+    }
+
+    .imageBox:hover .hoverImg {
+        display: block;
+        
+    }
+
+
+
+
+
+
+
+    .gift-box-container {
+            position: relative;
+            width: 250px;
+            height: 220px;
+            cursor: pointer;
+        }
+        .gift-box {
+            width: 100%;
+            height: 100%;
+            background-image: url('https://cdn.dribbble.com/users/1046956/screenshots/5931773/giftboxanimation6x8.gif'); /* Placeholder gift box image */
+            background-size: cover;
+            transition: transform 0.6s ease;
+        }
+        .gift-box.open {
+            transform: rotateX(180deg); /* Flip animation */
+        }
+        .surprise-image {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://media.tenor.com/qIbbLqvpft4AAAAj/milk-and-mocha.gif'); /* Placeholder surprise image */
+            background-size: cover;
+        }
+        .gift-box.open + .surprise-image {
+            display: block;
+        }
+
+   
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <center><div class="header">Happy Birthday</div></center>
+        <div class="message">Wishing you a day as amazing as you are! May it be full of smiles, laughter, and everything that makes you happy.</div>
+       <!-- <div class="images">
+            <img src="https://media.istockphoto.com/id/1278918978/photo/choco-chips-cake.webp?b=1&s=170667a&w=0&k=20&c=BUPi4Nko-hSslQRHBThec_2_T06wIOuwmfPvq_6EzAk=" height="250" width="250" alt="Birthday Cake">
+        </div>
+    -->
+         
+
+           <div class="imageBox">
+            <div class="imageInn">
+              <img src="https://media1.giphy.com/media/PJ0wSP8INWxyvY6Hyd/giphy.gif?cid=6c09b952bj6r00c3bukctlfqpcpyzyxldvr5w87x6ybda7pr&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g" width="250" height="300"alt="Default Image">
+            </div>
+            <div class="hoverImg">
+              <img src="https://cdn2.momjunction.com/wp-content/uploads/baby-names/bn-wallpapers/sahil_i_love_wallpaper.jpg.webp" width="250" height="160" alt="Profile Image">
+            </div>
+          </div>
+
+
+
+
+
+            <div><br><br>
+               <b> My Love, </b><br>
+<br>
+<p>From the moment we met, you’ve filled my life with joy, laughter, and endless love. Every day with you feels like a beautiful dream I never want to wake up from. You are my heart’s favorite place to be, and every time you hold me close, I feel like the luckiest girl in the world.
+</p>
+<p>
+I fall in love with you more and more each day. The way you make me smile, the way you understand me without words, and the way your eyes light up when you look at me—it all makes my heart flutter. You are my safe place, my love, and my forever.
+</p>
+<p>
+Sometimes, I think about all the little things you do— the way you hold my hand, the way you listen so intently when I talk. You make me feel seen, cherished, and adored, and I can’t even express how much that means to me.
+</p>
+<p>
+You are my sun on cloudy days and my comfort on the hard ones. I love the way you love me—so deeply, so patiently, and so kindly. I promise to always love you with everything I have, today and always.
+</p>
+<p>
+I can’t wait to make more beautiful memories with you. I love you endlessly.
+</p>
+<br>
+Forever yours,
+<br>
+Sanu 💖
+            </div>
+
+
+
+   
+    <div class="gift-box-container" onclick="openGiftBox()">
+      <div class="gift-box"></div>
+      <div class="surprise-image"></div>
+  </div>
+  
+  <script>
+      function openGiftBox() {
+          const giftBox = document.querySelector('.gift-box');
+          giftBox.classList.toggle('open');
+      }
+  </script>
+
+<div class="footer">Enjoy your special day!</div>
+</div>
+</body>
+</html
